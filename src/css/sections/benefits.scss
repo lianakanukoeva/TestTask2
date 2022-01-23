@@ -1,0 +1,17 @@
+.benefits {
+    position: relative;
+    padding: rem(80px) rem(130px);
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    border-bottom: 1px solid $border_grey;
+    &__digits {
+        font-size: rem(64px);
+        font-weight: 700;
+        color: $black;
+    }
+    &__text {
+        margin-top: rem(15px);
+        color: $grey;
+    }
+}

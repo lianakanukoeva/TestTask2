@@ -1,0 +1,42 @@
+.header {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: rem(10px) rem(20px);
+    &__logos {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        img {
+            display: block;
+        }
+    }
+    .raif {
+        width: 172px;
+        height: 36px;
+    }
+    .visa {
+        max-width: rem(85px);
+        height: rem(30px);
+        margin-left: rem(20px);
+    }
+    &__vertical-line {
+        width: 1px;
+        height: 70%;
+        display: block;
+        margin-left: rem(20px);
+        background-color: $border_grey;
+    }
+    &__info {
+        font-weight: 400;
+        text-align: right;
+    }
+    &__phone {
+        font-size: 20px;
+    }
+    &__addition {
+        font-size: 13px;
+        color: $grey
+    }
+}

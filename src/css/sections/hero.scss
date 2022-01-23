@@ -1,0 +1,51 @@
+.hero {
+    position: relative;
+    background: url(../img/promo_desk.png) 100% 100% no-repeat;
+    background-size: cover;
+    padding: rem(80px) rem(130px);
+    &__content {
+        max-width: rem(510px);
+    }
+    &__free-maintenance {
+        width: rem(245px);
+        height: rem(34px);
+        display: flex;
+    }
+    &__info-text {
+        padding: 8px;
+        color: $white;
+        background: $blue;
+        border-radius: 5px 0 0 5px;
+    }
+    &__arrow {
+        border-top: rem(17px) solid transparent;
+        border-left: rem(10px) solid $blue;
+        border-bottom: rem(17px) solid transparent;
+    }
+    &__title {
+        margin: rem(20px) 0;
+        font-size: rem(60px);
+        font-weight: 700;
+        color: $white;
+    }
+    &__percent {
+        font-size: rem(108px);
+        color: $white;
+        font-weight: 800;
+    }
+    &__link {
+        width: rem(214px);
+        height: rem(54px);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: $yellow;
+        margin-top: 30px;
+        border-radius: 5px;
+        color: $black;
+        font-weight: 600;
+        &:hover {
+            background: $yellow_hover;
+        }
+    }
+}

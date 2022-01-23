@@ -1,0 +1,36 @@
+.cashback {
+    position: relative;
+    padding: rem(80px) rem(130px);
+    &__title {
+        text-align: center;
+        font-size: rem(48px);
+        font-weight: 700;
+        color: $black;
+    }
+    &__list {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__item {
+        width: rem(365px);
+        height: rem(180px);
+        display: flex;
+        align-items: center;
+        border-radius: 10px;
+        padding: 30px;
+        font-size: 24px;
+        color: $white;
+        &--coin {
+            background: url(../img/coins.png) $dark_blue no-repeat;
+            background-position: right;
+        }
+        &--package {
+            background: url(../img/package.png) $dark_blue no-repeat;
+            background-position: top right;
+        }
+        &--car {
+            background: url(../img/car.png) $dark_blue no-repeat;
+            background-position: right;
+        }
+    }
+}

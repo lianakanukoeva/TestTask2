@@ -3,7 +3,7 @@ body {
     font-size: 16px;
     margin: 0;
     padding: 0;
-    line-height: 1.42;
+    line-height: 1.12;
     position: relative;
 }
 
@@ -25,6 +25,10 @@ ul {
     list-style: none;
 }
 
+a {
+    text-decoration: none;
+}
+
 .wrapper {
     position: relative;
     width: 100%;
@@ -39,7 +43,6 @@ section {
     height: 100%;
     overflow: hidden;
     min-width: rem(940px);
-    min-height: rem(650px);
 }
 
 h1,
