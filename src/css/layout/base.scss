@@ -43,6 +43,12 @@ section {
     height: 100%;
     overflow: hidden;
     min-width: rem(940px);
+    @include tablets {
+        min-width: rem(768px);
+    }
+    @include phone {
+        min-width: rem(320px);
+    }
 }
 
 h1,

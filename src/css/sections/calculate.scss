@@ -95,3 +95,65 @@
         }
     }
 }
+
+@include tablets {
+    .calculate {
+        width: 100%;
+        padding: rem(40px) 0 0;
+        &__computations {
+            display: block;
+            margin: 20px 0 0;
+            width: 100%;
+        }
+        &__computations-line {
+            display: none;
+        }
+        &__right {
+            text-align: center;
+            padding: rem(20px);
+            margin: 20px 0 0;
+            background: $border_grey;
+            border-radius: 10px;
+        }
+        &__result {
+            margin-top: rem(20px);
+        }
+        &__link {
+            margin: rem(20px) auto;
+        }
+    }
+}
+
+@include phone {
+    .calculate {
+        padding: rem(20px);
+        background: $white;
+        &__title {
+            font-size: rem(30px);
+        }
+        &__text {
+            font-size: rem(16px);
+        }
+        &__computations {
+            padding: 0;
+        }
+        &__digits {
+            font-size: rem(28px);
+        }
+        &__label {
+            font-size: rem(14px);
+        }
+        &__computation {
+            &-result {
+                padding: rem(10px) 0;
+            }
+            &-sum {
+                font-size: rem(24px);
+            }
+            &-label {
+                font-size: 12px;
+                padding: rem(15px) 0;
+            }
+        }
+    }
+}

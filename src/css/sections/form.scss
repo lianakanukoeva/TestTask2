@@ -10,6 +10,7 @@
     &__list {
         display: flex;
         justify-content: space-around;
+        flex-wrap: wrap;
     }
     &__item {
         display: flex;
@@ -29,5 +30,39 @@
         border-radius: 10px;
         margin: rem(40px) auto 0;
         color: $grey;
+    }
+}
+
+@include tablets {
+    .form {
+        padding: rem(40px) 0 0;
+        &__list {
+            padding: 0 rem(40px);
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+        &__item {
+            margin-bottom: rem(20px);
+        }
+        &__place {
+            width: 100%;
+            background: $border_grey;
+        }
+    }
+}
+
+@include phone {
+    .form {
+        &__title {
+            font-size: rem(30px);
+        }
+        &__list {
+            display: block;
+            font-size: rem(16px);
+        }
+        &__place {
+            font-size: rem(16px);
+        }
     }
 }

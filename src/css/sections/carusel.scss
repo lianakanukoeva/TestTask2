@@ -73,3 +73,21 @@
         }
     }
 }
+
+@include tablets {
+    .carusel-section {
+        padding: rem(40px);
+    }
+}
+
+@include phone {
+    .carusel-section {
+        padding: rem(20px);
+        &__title {
+            font-size: rem(30px);
+        }
+        &__text {
+            font-size: rem(16px);
+        }
+    }
+}

@@ -15,3 +15,31 @@
         color: $grey;
     }
 }
+
+@include tablets {
+    .benefits {
+        padding: rem(40px) 0;
+        display: block;
+        &__info {
+            margin-bottom: rem(40px);
+        }
+        &__digits {
+            font-size: rem(30px);
+        }
+        &__text {
+            font-size: rem(14px);
+        }
+    }
+}
+
+@include phone {
+    .benefits {
+        padding: rem(20px) 0;
+        &__digits {
+            font-size: rem(30px);
+        }
+        &__text {
+            font-size: rem(14px);
+        }
+    }
+}

@@ -10,6 +10,7 @@
     &__list {
         display: flex;
         justify-content: space-between;
+        flex-wrap: wrap;
     }
     &__item {
         width: rem(365px);
@@ -31,6 +32,34 @@
         &--car {
             background: url(../img/car.png) $dark_blue no-repeat;
             background-position: right;
+        }
+    }
+}
+
+@include tablets {
+    .cashback {
+        &__list {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        &__item {
+            margin-bottom: rem(40px);
+        }
+    }
+}
+
+@include phone {
+    .cashback {
+        padding: rem(20px);
+        &__item {
+            margin-bottom: rem(20px);
+        }
+        &__title {
+            font-size: rem(30px);
+        }
+        &__item {
+            font-size: rem(22px);
         }
     }
 }

@@ -49,3 +49,24 @@
         }
     }
 }
+
+@include tablets {
+    .hero {
+        padding: rem(40px) rem(80px);
+    }
+}
+
+@include phone {
+    .hero {
+        background: url(../img/promo_mob.png) 100% 100% no-repeat;
+        background-size: cover;
+        padding: rem(20px);
+        height: rem(490px);
+        &__title {
+            font-size: rem(36px);
+        }
+        &__percent {
+            font-size: rem(42px);
+        }
+    }
+}

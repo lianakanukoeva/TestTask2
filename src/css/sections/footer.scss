@@ -50,3 +50,27 @@
 .content {
     user-select: none;
 }
+
+@include tablets {
+    .new-block {
+        display: block;
+        padding: rem(40px);
+        &__info {
+            margin-top: rem(20px);
+        }
+    }
+    .footer {
+        padding: rem(40px);
+    }
+}
+
+@include phone {
+    .new-block {
+        font-size: rem(16px);
+        padding: rem(20px);
+    }
+    .footer {
+        padding: rem(20px);
+        font-size: rem(16px);
+    }
+}
