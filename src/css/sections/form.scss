@@ -1,0 +1,33 @@
+.form {
+    position: relative;
+    padding: rem(80px) rem(130px);
+    &__title {
+        font-size: 48px;
+        font-weight: 700;
+        text-align: center;
+        color: $black;
+    }
+    &__list {
+        display: flex;
+        justify-content: space-around;
+    }
+    &__item {
+        display: flex;
+        align-items: flex-start;
+        max-width: rem(250px);
+        &-text {
+            margin-left: 10px;
+        }
+    }
+    &__place {
+        width: 85%;
+        height: rem(510px);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid $border_grey;
+        border-radius: 10px;
+        margin: rem(40px) auto 0;
+        color: $grey;
+    }
+}

@@ -1,0 +1,75 @@
+.carusel-section {
+    background: $dark_grey;
+    padding: rem(80px) rem(130px);
+    &__title {
+        text-align: center;
+        font-size: rem(48px);
+        font-weight: 700;
+        color: $white;
+    }
+    &__text {
+        text-align: center;
+        color: $white;
+    }
+    .arrow,
+    .arrow:visited,
+    .arrow:active,
+    .arrow:focus {
+        width: 40px;
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        background: $yellow;
+        border-radius: 10px;
+        color: $black;
+        text-decoration: none;
+    }
+    .arrow:hover,
+    .arrow:active,
+    .arrow:focus {
+        background: $yellow_hover;
+    }
+    .carusel-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 50px;
+    }
+    .arrow {
+        font-size: rem(30px);
+    }
+    .carusel {
+        display: flex;
+        width: 1000px;
+        overflow: hidden;
+        margin: 0 10px;
+    }
+    .items {
+        display: flex;
+        position: relative;
+        will-change: right;
+        transition: right 0.3s;
+    }
+    .item {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 250px;
+    }
+    &__link {
+        width: rem(214px);
+        height: rem(54px);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: $yellow;
+        margin: rem(40px) auto 0;
+        border-radius: 5px;
+        color: $black;
+        font-weight: 600;
+        &:hover {
+            background: $yellow_hover;
+        }
+    }
+}

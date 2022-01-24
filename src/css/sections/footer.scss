@@ -1,0 +1,52 @@
+.new-block {
+    display: flex;
+    justify-content: space-between;
+    padding: rem(30px) rem(130px);
+    border-bottom: 1px solid $border_grey;
+    color: $grey;
+}
+
+.footer {
+    position: relative;
+    padding: rem(40px) rem(130px);
+    color: $grey;
+}
+
+.scrollable {
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+    height: 150px;
+}
+
+.scrollable.showScroll::after {
+    position: absolute;
+    content: '';
+    top: 5%;
+    right: 7px;
+    height: 90%;
+    width: 3px;
+    background: $border_grey;
+}
+
+.scrollable .content-wrapper {
+    width: 100%;
+    height: 100%;
+    overflow-y: scroll;
+}
+
+.scroller {
+    z-index: 5;
+    cursor: pointer;
+    position: absolute;
+    width: 10px;
+    border-radius: 5px;
+    background: $grey;
+    top: 0px;
+    right: 3px;
+    transition: top .08s;
+}
+
+.content {
+    user-select: none;
+}

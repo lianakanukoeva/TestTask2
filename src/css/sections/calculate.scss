@@ -1,0 +1,97 @@
+.calculate {
+    position: relative;
+    background: $grey_section;
+    padding: rem(80px) rem(130px);
+    &__title {
+        font-size: 48px;
+        font-weight: 700;
+        text-align: center;
+        color: $black;
+    }
+    &__text {
+        text-align: center;
+        color: $grey;
+        &-important {
+            text-align: left;
+            margin-top: rem(20px);
+        }
+    }
+    &__computations {
+        width: 85%;
+        display: flex;
+        background: $white;
+        border-radius: 10px;
+        margin: rem(50px) auto 0;
+        padding: rem(55px);
+    }
+    &__computations-line {
+        width: 2px;
+        display: block;
+        margin-left: rem(40px);
+        background-color: $border_grey;
+    }
+    &__computation {
+        &-result {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: $black;
+            padding: rem(10px) 0;
+        }
+        &-sum {
+            font-size: rem(32px);
+        }
+        &-label {
+            display: flex;
+            justify-content: space-between;
+            align-content: center;
+            color: $grey;
+            font-size: 14px;
+            padding: rem(15px) 0;
+        }
+    }
+    input[type=range] {
+        background: linear-gradient(to right, $yellow 0%, $yellow 40%, $border_grey 40%, $border_grey 100%);
+        border-radius: 8px;
+        height: 5px;
+        width: 100%;
+        outline: none;
+        transition: background 450ms ease-in;
+        -webkit-appearance: none;
+    }
+    input[type=range]::-webkit-slider-thumb {
+        width: 35px;
+        height: 35px;
+        border-radius: 50%;
+        -webkit-appearance: none;
+        background: $yellow;
+    }
+    &__right {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-left: rem(40px);
+    }
+    &__results {
+        color: $black;
+    }
+    &__digits {
+        font-size: rem(32px);
+        font-weight: 700;
+    }
+    &__link {
+        width: rem(214px);
+        height: rem(54px);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: $yellow;
+        margin-top: rem(30px);
+        border-radius: 5px;
+        color: $black;
+        font-weight: 600;
+        &:hover {
+            background: $yellow_hover;
+        }
+    }
+}
