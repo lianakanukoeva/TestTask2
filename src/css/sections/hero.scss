@@ -68,5 +68,10 @@
         &__percent {
             font-size: rem(42px);
         }
+        &__link {
+            margin: 0;
+            width: 100%;
+            border-radius: 0;
+        }
     }
 }
