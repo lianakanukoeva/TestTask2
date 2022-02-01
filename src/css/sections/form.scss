@@ -1,6 +1,7 @@
 .form {
     position: relative;
-    padding: rem(80px) rem(130px);
+    padding: 5% 9%;
+    // padding: rem(80px) rem(130px);
     &__title {
         font-size: 48px;
         font-weight: 700;
@@ -48,6 +49,7 @@
         &__place {
             width: 100%;
             background: $border_grey;
+            border-radius: 0;
         }
     }
 }
@@ -63,6 +65,7 @@
         }
         &__place {
             font-size: rem(16px);
+            border-radius: 0;
         }
     }
 }

@@ -1,7 +1,9 @@
 .benefits {
     position: relative;
-    padding: rem(80px) rem(130px);
+    padding: 5% 9%;
+    // padding: rem(80px) rem(130px);
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     text-align: center;
     border-bottom: 1px solid $border_grey;

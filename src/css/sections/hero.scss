@@ -2,7 +2,8 @@
     position: relative;
     background: url(../img/promo_desk.png) 100% 100% no-repeat;
     background-size: cover;
-    padding: rem(80px) rem(130px);
+    padding: 5% 9%;
+    // padding: rem(80px) rem(130px);
     &__content {
         max-width: rem(510px);
     }
@@ -50,6 +51,11 @@
     }
 }
 
+.hero__link.mobile {
+    display: none;
+    visibility: hidden;
+}
+
 @include tablets {
     .hero {
         padding: rem(40px) rem(80px);
@@ -62,16 +68,22 @@
         background-size: cover;
         padding: rem(20px);
         height: rem(490px);
+        .desktop {
+            display: none;
+            visibility: hidden;
+        }
         &__title {
             font-size: rem(36px);
         }
         &__percent {
             font-size: rem(42px);
         }
-        &__link {
-            margin: 0;
-            width: 100%;
-            border-radius: 0;
-        }
+    }
+    .hero__link.mobile {
+        display: flex;
+        visibility: visible;
+        margin: 0;
+        width: 100%;
+        border-radius: 0;
     }
 }

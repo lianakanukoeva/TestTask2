@@ -1,7 +1,8 @@
 .new-block {
     display: flex;
     justify-content: space-between;
-    padding: rem(30px) rem(130px);
+    padding: 2% 9%;
+    // padding: rem(30px) rem(130px);
     border-bottom: 1px solid $border_grey;
     color: $grey;
 }
